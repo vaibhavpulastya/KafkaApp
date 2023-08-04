@@ -1,0 +1,21 @@
+server.port: 1923
+server.servlet.context-path: /kafka-demo
+
+logging.level.org.apache.kafka: OFF
+
+kafka: 
+  bootstrap.server1: api:9092
+  bootstrap.server2: api:9092
+  bootstrap.server3: api:9092
+  config:
+    consumer:
+      group: kafka-demo-cg
+      count: 6
+      
+    topic: 
+      name: kafka-demo-topic
+      partition: 6
+      replication.factor: 1
+      
+    
+  
